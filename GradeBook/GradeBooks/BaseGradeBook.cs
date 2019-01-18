@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Linq;
-
 using GradeBook.Enums;
 using System.Collections.Generic;
 using System.IO;
@@ -11,6 +10,7 @@ namespace GradeBook.GradeBooks
 {
     public class BaseGradeBook
     {
+        public GradeBookType Type { get; set; }   
         public string Name { get; set; }
         public List<Student> Students { get; set; }
 
@@ -18,6 +18,7 @@ namespace GradeBook.GradeBooks
         {
             Name = name;
             Students = new List<Student>();
+
         }
 
         public void AddStudent(Student student)
