@@ -14,7 +14,7 @@ namespace GradeBook.GradeBooks
         public string Name { get; set; }
         public List<Student> Students { get; set; }
 
-        protected public BaseGradeBook(string name)
+         public BaseGradeBook(string name)
         {
             Name = name;
             Students = new List<Student>();
